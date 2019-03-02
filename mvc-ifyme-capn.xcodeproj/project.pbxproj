@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A50486F9222AB49300658B59 /* SamsungProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50486F8222AB49300658B59 /* SamsungProduct.swift */; };
+		A50486FB222AB54700658B59 /* CustomPrettyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50486FA222AB54700658B59 /* CustomPrettyLabel.swift */; };
 		A5213ED722202F2F001A3A28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5213ED622202F2F001A3A28 /* AppDelegate.swift */; };
 		A5213ED922202F2F001A3A28 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5213ED822202F2F001A3A28 /* Controller.swift */; };
 		A5213EDC22202F2F001A3A28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5213EDA22202F2F001A3A28 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A50486F8222AB49300658B59 /* SamsungProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamsungProduct.swift; sourceTree = "<group>"; };
+		A50486FA222AB54700658B59 /* CustomPrettyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPrettyLabel.swift; sourceTree = "<group>"; };
 		A5213ED322202F2F001A3A28 /* mvc-ifyme-capn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mvc-ifyme-capn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5213ED622202F2F001A3A28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5213ED822202F2F001A3A28 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
@@ -82,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				A54B7BCA2220339B00FD277F /* CustomPrettyView.swift */,
+				A50486FA222AB54700658B59 /* CustomPrettyLabel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -90,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				A54B7BC8222030EB00FD277F /* AppleProduct.swift */,
+				A50486F8222AB49300658B59 /* SamsungProduct.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,8 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50486F9222AB49300658B59 /* SamsungProduct.swift in Sources */,
 				A54B7BC9222030EB00FD277F /* AppleProduct.swift in Sources */,
 				A5213ED922202F2F001A3A28 /* Controller.swift in Sources */,
+				A50486FB222AB54700658B59 /* CustomPrettyLabel.swift in Sources */,
 				A5213ED722202F2F001A3A28 /* AppDelegate.swift in Sources */,
 				A54B7BCB2220339B00FD277F /* CustomPrettyView.swift in Sources */,
 			);

@@ -32,7 +32,7 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uss-AQ-aqn">
                                                 <rect key="frame" x="0.0" y="53" width="210" height="48"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="19"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -67,18 +67,32 @@
                                     <constraint firstAttribute="bottom" secondItem="CZw-BJ-CHc" secondAttribute="bottom" constant="20" id="sYg-HR-Dea"/>
                                 </constraints>
                             </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Usv-od-hJh">
+                                <rect key="frame" x="116" y="147" width="143" height="28"/>
+                                <segments>
+                                    <segment title="iPhone"/>
+                                    <segment title="Samsung"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentChosen:" destination="BYZ-38-t0r" eventType="valueChanged" id="0nc-fQ-mQa"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Usv-od-hJh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X8H-tC-lxw"/>
+                            <constraint firstItem="Usv-od-hJh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="127" id="XOo-9Z-ZV4"/>
                             <constraint firstItem="z41-7U-i6T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ygy-GZ-w0r"/>
+                            <constraint firstItem="z41-7U-i6T" firstAttribute="top" secondItem="Usv-od-hJh" secondAttribute="bottom" constant="9.5" id="dA2-EE-nLN"/>
                             <constraint firstItem="z41-7U-i6T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zgF-zp-AiH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="iphoneColorLabel" destination="6vu-Kv-X7q" id="Y5J-K0-Qkr"/>
-                        <outlet property="iphoneNameLabel" destination="Uss-AQ-aqn" id="7qx-qE-ilp"/>
-                        <outlet property="iphonePriceLabel" destination="gdF-sp-qqQ" id="YjR-yG-8Dh"/>
+                        <outlet property="phoneColorLabel" destination="6vu-Kv-X7q" id="Y5J-K0-Qkr"/>
+                        <outlet property="phoneNameLabel" destination="Uss-AQ-aqn" id="7qx-qE-ilp"/>
+                        <outlet property="phonePriceLabel" destination="gdF-sp-qqQ" id="YjR-yG-8Dh"/>
+                        <outlet property="phoneSelector" destination="Usv-od-hJh" id="p84-6u-EVG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
